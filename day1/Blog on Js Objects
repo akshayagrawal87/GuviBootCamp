@@ -74,6 +74,7 @@ function obj(value1, value2, ...) {
 In ECMAScript 5, an object can also be created with the function Object.create().
 
 Object.create() can be used for single inheritance and Object.assign() for multiple inheritance.
+Object.fromEntries() — method transforms a list of key-value pairs into an object.
 
 JavaScript Objects are Mutable
 
