@@ -1,0 +1,158 @@
+HTML CheatSheet Tags With Explanation
+
+1.<!DOCTYPE> 	Defines the document type
+
+2.<html>	Defines the root of an HTML document
+
+3.<head>	Contains metadata/information for the document
+
+4.<body>	Defines the document's body
+
+5.<main>	Specifies the main content of a document
+
+6.<header>  Defines a header for a document or section
+
+7.<section> Defines a section in a document
+
+8.<span>   Defines a section in a document
+
+9.<article> tag specifies independent, self-contained content.
+
+10.<aside> tag defines some content aside from the content it is placed in.
+
+11.<a> tag defines a hyperlink, which is used to link from one page to another.
+
+12. <h1> to <h6> Defines HTML headings
+
+13.<br> tag inserts a single line break.
+
+14.<button> tag defines a clickable button.
+
+15.<footer> tag defines a footer for a document or section.
+
+16.<form> tag is used to create an HTML form for user input.
+
+17.<hr> tag defines a thematic break in an HTML page 
+
+18.<input> tag specifies an input field where the user can enter data.
+
+19.The <li> tag defines a list item.
+
+20.<nav> tag defines a set of navigation links.
+
+21.<script> tag is used to embed a client-side script
+
+22.<strong> tag is used to define text with strong importance
+
+23.<style> tag is used to define style information (CSS) for a document.
+
+24.<table> tag defines an HTML table.
+
+25.<tbody> tag is used to group the body content in an HTML table
+
+26.<td> tag defines a standard data cell in an HTML table.
+
+27.<th> tag defines a header cell in an HTML table.
+
+28.<title> tag defines the title of the document.
+
+29.<tr> tag defines a row in an HTML table
+
+30.<!--...-->	Defines a comment
+
+31.<b>	Defines bold text
+
+32.<em> tag is used to define emphasized text
+
+33.<i>	Defines a part of text in an alternate voice or mood
+
+34.<iframe>	Defines an inline frame,inline frame is used to embed another document within the current HTML document
+
+35.<q>	Defines a short quotation
+
+36.<blockquote>	Defines a section that is quoted from another source.
+
+37.<address>	Defines contact information for the author/owner of a document.
+
+38.<div>	Defines a section in a document
+
+<input type="text" spellcheck="value"> the Spell Check feature can be applied to HTML forms using the spellcheck attribute
+
+Detailed Descriptions
+
+A.Lists
+
+<ul> Creates an unordered list
+
+<ol> Creates an ordered list 
+
+<li> Encompasses each list item
+
+<dl> Creates a definition list
+
+<dt> Precedes each defintion term
+
+<dd> Precedes each defintion
+
+Ex.dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+B.HTML Attributes
+
+All HTML elements can have attributes
+Attributes provide additional information about elements
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+
+1.href
+The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+
+2.src
+The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed
+
+3.width and height
+specifies the width and height of the image
+
+4.alt attribute for the <img>
+tag specifies an alternate text for an image
+
+<img src="img_typo.jpg" alt="Girl with a jacket">
+
+5.style
+attribute is used to add styles to an element
+<p style="color:red;">
+
+6.lang attribute inside the <html>
+declare the language of the Web page
+<html lang="en">
+
+7.title
+attribute defines some extra information about an element
+
+8.Using The class Attribute
+
+The class attribute is often used to point to a class name in a style sheet
+
+Ex:<div class="city">
+
+9.Using The Id Attribute
+
+The id attribute specifies a unique id for an HTML element.
+
+Difference Between Class and ID
+
+A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:
+
+10.SpellCheck Attribute
+<input type="text" spellcheck="value"> the Spell Check feature can be applied to HTML forms using the spellcheck attribute
+
+11..contenteditable attribute
+The contenteditable attribute specifies whether the content of an element is editable or not.
+
+12.Dir
+
+Dir attribute of HTML sets the direction of the text within an element in HTML
