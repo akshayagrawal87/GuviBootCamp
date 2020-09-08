@@ -76,6 +76,10 @@ HTML CheatSheet Tags With Explanation
 
 38.<div>	Defines a section in a document
 
+39.<audio>	Defines embedded sound content
+
+40.<video>	Defines embedded video content
+
 <input type="text" spellcheck="value"> the Spell Check feature can be applied to HTML forms using the spellcheck attribute
 
 Detailed Descriptions
@@ -156,3 +160,66 @@ The contenteditable attribute specifies whether the content of an element is edi
 12.Dir
 
 Dir attribute of HTML sets the direction of the text within an element in HTML
+
+13.accept 
+
+The accept attribute specifies a filter for what file types the user can pick from the file input dialog box (only for type="file").
+
+14.align
+
+Th align Attribute is used to specify the alignment of applet, caption, col, colgroup, hr, iframe, img, table, tbody, td, tfoot , th, thead, tr applet, area, img, input text content.
+
+15.async 
+
+A script that will be run asynchronously as soon as it is available
+
+16.autocomplete 
+
+The autocomplete attribute specifies whether a form or an input field should have autocomplete on or of
+
+17.autofocus 
+
+When present, it specifies that an <input> element should automatically get focus when the page loads.
+
+18.autoplay 
+
+The autoplay attribute is a boolean attribute.
+When present, the audio/video will automatically start playing as soon as it can do so without stopping.
+
+19.autosave 
+
+The autosave attribute is a non-standard attribute that enables the persistence of search terms across page reloads
+
+20.bgcolor
+
+The HTML bgcolor attribute is used to set the background color of an HTML element.
+
+21.buffered 
+
+The buffered property returns a TimeRanges object.
+The TimeRanges object represents the user's buffered ranges of the audio/video
+
+22.challenge 
+The challenge attribute specifies that the value of the <keygen> element will be challenged when submitted.
+
+The <keygen> tag specifies a key-pair generator field used for forms.
+
+23.charset 
+
+The charset attribute specifies the character encoding used in an external script file.
+
+ISO-8859-1" - Standard encoding for the Latin alphabet
+"UTF-8" - Character encoding for Unicode. Compatible with ASCII
+
+
+24.checked 
+
+The checked attribute is a boolean attribute.
+
+25.cite
+
+The HTML cite attribute is used to specify the URL of the document that explains the quotes, message or text which describes why the text was inserted. 
+
+
+What is .htaccess?
+.htaccess is a configuration file for use on web servers running the Apache Web Server software.
