@@ -39,5 +39,51 @@ As a developer we should be responsible to hadnling error scenarios not the brow
 We should using try catch aroud our logic
 as It provides more details about the error and catch handles some of the error we thought that might occur.
 
+Types of Error
+
+1.Type coercion errors
+2.Data type errors
+3.Communication errors
+	a.Invalid URL/post data
+	b.Server response status
+	c.No network connection
+	d.Server response content
+We should Throw our own error/custom error
+
+Ex: throw new error("sort Error: Invalid Org")
+
+Fatl Errors and not Fata error
+
+Non Fatal error
+
+Won'tinterfere with user's main tasks
+Recovery is possible
+
+A repeat ofthe action may resultin the
+appropriate result
+
+• Don'ttell the user itisn't working unless
+absolutely necessary
+
+Fatal error
+
+The application absolutely cannot
+continue
+
+Significantly interferes with user's ability
+to be productive
+
+Message the user immediately
+
+Debug Mode
+
+Assign a variable thatis globally
+available
+
+try-catch should re-throw the error
+
+window.onerror should return false
+
+Allow the browser to handle the error
 
 
