@@ -1,0 +1,43 @@
+SlideToWriteUp
+
+1.What do users see whenthere's a JavaS cript error on a web page?
+
+User Might see nothing or might face problem in functionality
+
+If an error is possible, someone will make it. The designer must assume that all possible errors will occur and design so as to minimize the chance ofthe error in the first place, or its
+effects once it gets made. 
+
+Errors should be easy to detect,they should have minimal
+consequences, and, if possible,their effects should be reversible.
+
+We should always assume that our code will fail and not make assumtions that it will work on every scenario.
+
+We need to follow certain rules while coding to make it error
+free.
+
+Rule 1
+
+Assume code will fail and prepare accordingly
+
+For ex
+
+function(souce,dest){
+}
+here we are calling a function!but what if sorce and dest are undefine?
+
+
+Rule 2
+
+Log the errors to server
+
+It is a coding convention these days to use a logger to save the bugs and error caused in the system
+
+Rule 3
+
+As a developer we should be responsible to hadnling error scenarios not the browser
+
+We should using try catch aroud our logic
+as It provides more details about the error and catch handles some of the error we thought that might occur.
+
+
+
