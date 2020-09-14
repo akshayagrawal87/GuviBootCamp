@@ -1,0 +1,20 @@
+Why Objects are copied & compared by reference ?
+
+Objects are copied by reference can be justified by following points.
+
+1.An object takes lot of memory as compared to primitive types,for proper memory management objects are referred.
+
+2.Js follow flyweigth pattern by default which tries to reduce the same memory allocation to same objects
+
+3.Copying an object is complex as an objects can have nested objects inside each other.
+
+4.A user can create a new object manually by creating new reference but by default it gives the same referencec
+
+for ex:
+ var obj={'akshay':'agrawal'}
+var person=obj
+
+person is obj and obj is person
+
+In order to create a new reference I need to run a loop.
+This is done so mostly to reduce  data redundancy and memory management. 
