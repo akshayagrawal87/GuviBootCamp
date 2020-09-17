@@ -1,0 +1,12 @@
+Why Objects are copied & compared by reference ?
+
+Objects are assigned and copied by reference primitive types are copied by value not reference.
+
+In case of objects it done to reduce the complexity and save memory and if needed user can perfom deep copy to copy a objects
+but by defult it allocates a reference value in the memory pool
+
+It foloows flyweight pattern which is all about saving memory as much as possoible
+
+it allow speed ups the process.
+
+All operations via copied references (like adding/removing properties) are performed on the same single object.
