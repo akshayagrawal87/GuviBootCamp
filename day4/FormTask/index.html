@@ -433,10 +433,10 @@
                                 <td><span id="asterisk">*</span><b> 9.Address for Communication</b></td>
                                 <td>
                                     <label for="resident">Residential</label>
-                                    <input type="radio" value="residential" id="residential">
+                                    <input type="radio" value="residential" id="residential" name="residentType">
 
                                     <label for="office">Office</label>
-                                    <input type="radio" value="office" id="office">
+                                    <input type="radio" value="office" id="office" name="residentType">
                                 </td>
                             </tr>
                         </tbody>
@@ -454,9 +454,9 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td><b><label for="officeName">Office Name</label></b>
+                                <td ><b><label for="officeName">Office Name</label></b>
                                 </td>
-                                <td>
+                                <td style="width:50%">
 
                                     <input type="text" value="" id="officeName" name="officeName">
                                 </td>
@@ -477,7 +477,7 @@
                         <tbody>
                             <tr>
                                 <td><b>Flat/Door/Block No.</b></td>
-                                <td>
+                                <td style="width:50%">
                                     <label for="flatNo"></label>
                                     <input type="text" value="" id="flatNo">
                                 </td>
@@ -500,7 +500,7 @@
                                 <td>
                                     <label for="buildingName"><b>Name of Premises/Building/Village</b></label>
                                 </td>
-                                <td>
+                                <td style="width:50%"> 
                                     <input type="text" value="" id="buildingName" name="buildingName">
                                 </td>
                             </tr>
@@ -523,7 +523,7 @@
                                     <label for="roadName"><b>Road/Street/Lane/Post Office</b></label>
 
                                 </td>
-                                <td>
+                                <td style="width:50%">
 
                                     <input type="text" value="" id="roadName" name="roadName">
                                 </td>
@@ -543,11 +543,11 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td>
+                                <td >
                                     <label for="areaName"><b>Area/Locality/Taluka/Sub-Division</b></label>
 
                                 </td>
-                                <td>
+                                <td style="width:50%">
 
                                     <input type="text" value="" id="areaName" name="areaName">
                                 </td>
@@ -567,11 +567,11 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td>
+                                <td >
                                     <label for="townName"><b>Town/City/District</b></label>
 
                                 </td>
-                                <td>
+                                <td style="width:50%">
 
                                     <input type="text" value="" id="townName" name="townName">
                                 </td>
@@ -591,7 +591,7 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td>
+                                <td style="width:50%">
                                     <label for="stateName"><b>State/Union Territory</b></label>
 
                                 </td>
@@ -653,7 +653,7 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td>
+                                <td style="width:50%">
                                     <label for="pin"><b>PIN</b></label>
 
                                 </td>
@@ -681,7 +681,7 @@
                                     <label for="pin"><b>Country</b></label>
 
                                 </td>
-                                <td>
+                                <td style="width:50%">
 
                                     <select disabled>
                                         <option value='null' selected>Select an Option</option>
@@ -956,7 +956,7 @@
                                     <label for="zipCode"><b>Zip</b></label>
 
                                 </td>
-                                <td>
+                                <td style="width:50%">
 
                                     <input type="text" value="" id="zipCode" name="zipCode" disabled>
                                 </td>
@@ -1434,12 +1434,12 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>
-                                                                <input type="radio" name="mobile" id="mobile">
+                                                                <input type="radio" name="phoneType" id="mobile">
                                                                 <label for="mobile">Mobile</label>
 
                                                             </td>
                                                             <td>
-                                                                <input type="radio" name="teleNum" id="teleNum">
+                                                                <input type="radio" name="phoneType" id="teleNum">
                                                                 <label for="teleNum">Telephone Number</label>
 
                                                             </td>
@@ -1769,10 +1769,10 @@
 
 
 
-                            <input type="radio" value="Physical PAN Card & e-PAN Card " id="physicalPanCard">
+                            <input type="radio" value="Physical PAN Card & e-PAN Card " id="physicalPanCard" name="typeOfCard">
                             <label for="physicalPanCard"> Physical PAN Card & e-PAN Card </label>
 
-                            <input type="radio" value="only e-PAN Card " id="ePanCard">
+                            <input type="radio" value="only e-PAN Card " id="ePanCard" name="typeOfCard">
                             <label for="ePanCard"> Only e-PAN Card </label>
                         </td>
                     </tr>
@@ -1832,9 +1832,8 @@
                 <label for="paperless">No</label>
                 <input type="radio" id="paperLess" values="no" name="paperless">
             </section>
+
             <section>
-
-
                 <input type="radio" id="paperLess" values="no" name="paperless" checked>
                 <label for="dsc">DSC</label>
                 <br>
@@ -1853,21 +1852,32 @@
                 <br>
                 <a href=# style="color: brown;">
                     Guidelines for DSC user</a>
-                <br>
-                Upload Photo <button>Choose File</button>&nbsp;&nbsp;&nbsp; Upload Signature <button>Choose
-                    File</button><br>
-                Upload Document <button>Choose File</button><br>
+                <br><br>
 
-                Alreadt Upload Photo:<input type="text" id="photo"><br>
-                Alreadt Upload Signature:<input type="text" id="sign"><br>
-                Already Uploaded Document:<textarea></textarea><br>
+       <span> Upload Photo 
+           <button style="margin-left: 5%;">Choose File</button>
+        </span>
+        &nbsp;&nbsp;&nbsp; 
 
-                <input type="submit">
+       <span style="margin-left: 20%;">
+           Upload Signature 
+           <button style="margin-left: 5%;">ChooseFile</button>
+        </span>
+        <br><br>
+
+        <span> 
+            Upload Document 
+            <button style="margin-left: 3%;">Choose File</button>
+        </span>
+        <br><br>
+
+      <span>Already Uploaded Photo:<input style="margin-left: 5%;width:20%" type="text" id="photo"></span>   
+            <br><br>
+        <span>Already Uploaded Signature:<input style="margin-left: 3%;width: 20%;"type="text" id="sign"></span><br><br>
+         <span> Already Uploaded Document:<textarea style="margin-left: 2%;width: 20%;"></textarea></span><br><br>
+
+        <span>  <input style="margin-left: 45%;height:40px ;width:100px ;" type="submit"> </span>
             </section>
-
-
-
-
         </form>
 
     </section>
