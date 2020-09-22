@@ -52,7 +52,7 @@ var obj2 = {"class":"FS","name":"GUVI"};
 
 Day 3
 
-Day 4 Tasks list
+Tasks list
 1.taskforCallBack
 Write a function which takes 2 params
 
