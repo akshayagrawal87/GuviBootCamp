@@ -58,7 +58,8 @@ body {
     position: absolute;
     padding: 15px;
     border-radius: 20%;
-    border: 3px groove #B0A8B9
+    border: 3px groove #B0A8B9;
+
 }
 
 .infoBar {
