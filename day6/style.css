@@ -1,15 +1,21 @@
 .poster {
     position: absolute;
-    width: 98%;
+    width: 99%;
     height: 100%;
-    outline: 4px dotted white;
-    outline-offset: -50px;
 
+    border: 2px dotted white;
 }
 
 .transfrom-text {
 
     transform: skewY(6deg) !important;
+
+}
+
+.outline {
+
+    outline: 4px dotted white;
+    outline-offset: -40px;
 
 }
 
@@ -24,8 +30,7 @@
     overflow: hidden;
     border-top-right-radius: 35%;
     border-top-left-radius: 13%;
-    padding: 10px;
-    margin: 5px;
+
     /* outline: 4px dotted white;
     outline-offset: -40px; */
 
@@ -36,9 +41,7 @@
     position: absolute;
     margin: 110px;
     margin-top: 30px;
-
-    font-family: 'Monoton',
-        cursive;
+    font-family: 'Monoton', cursive;
     font-size: 35px;
     letter-spacing: 10px;
     color: #DFD5CF;
@@ -46,8 +49,7 @@
 
 #largerLetter {
 
-    font-family: 'Mrs Saint Delafield',
-        cursive;
+    font-family: 'Mrs Saint Delafield', cursive;
 
     font-size: 250px !important;
 
@@ -85,8 +87,7 @@
     transform: skewY(-6deg);
     transform-origin: bottom left;
     overflow: hidden;
-    padding: 10px;
-    margin: 5px;
+
 
 }
 
@@ -94,9 +95,7 @@
     position: absolute;
     top: 5%;
     margin-left: 10%;
-
-    font-family: 'Monoton',
-        cursive;
+    font-family: 'Monoton', cursive;
     font-size: 35px;
     letter-spacing: 2px;
     color: #1F1527;
@@ -189,8 +188,7 @@
     transform: skewY(-6deg);
     transform-origin: bottom left;
     overflow: hidden;
-    padding: 10px;
-    margin: 5px;
+
 
 }
 
@@ -235,8 +233,7 @@
     transform: skewY(-6deg);
     transform-origin: bottom left;
     overflow: hidden;
-    padding: 10px;
-    margin: 5px;
+
 
 }
 
@@ -278,9 +275,7 @@
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
-    overflow: hidden;
-    padding: 10px;
-    margin: 5px;
+
 
 }
 
@@ -320,9 +315,7 @@
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
-    overflow: hidden;
-    padding: 10px;
-    margin: 5px;
+
 
 }
 
@@ -367,9 +360,7 @@
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
-    overflow: hidden;
-    padding: 10px;
-    margin: 5px;
+
 
 }
 
@@ -407,9 +398,7 @@
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
-    overflow: hidden;
-    padding: 10px;
-    margin: 5px;
+
 
 }
 
@@ -447,9 +436,6 @@
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
-    overflow: hidden;
-    padding: 10px;
-    margin: 5px;
 
 }
 
