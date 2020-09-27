@@ -1,9 +1,7 @@
 .poster {
-    position: absolute;
-    width: 99%;
-    height: 100%;
+    position: relative;
+    width: 100%;
 
-    border: 2px dotted white;
 }
 
 .transfrom-text {
@@ -14,16 +12,24 @@
 
 .outline {
 
-    outline: 4px dotted white;
-    outline-offset: -40px;
+    width: 96%;
+    height: 100%;
+    position: absolute;
+    top: 30px;
+    left: 2%;
+    z-index: 9;
+    border: 2px dotted white;
+    border-bottom: 0px solid white;
+    border-radius: 80px;
+
 
 }
 
 .part1 {
-    position: absolute;
+
     top: 0px;
-    background-color: #1F1527;
-    width: 99%;
+    background-color: #190d22;
+
     height: 800px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
@@ -31,16 +37,12 @@
     border-top-right-radius: 35%;
     border-top-left-radius: 13%;
 
-    /* outline: 4px dotted white;
-    outline-offset: -40px; */
-
-
 }
 
 #part1Text1 {
     position: absolute;
     margin: 110px;
-    margin-top: 30px;
+    top: au;
     font-family: 'Monoton', cursive;
     font-size: 35px;
     letter-spacing: 10px;
@@ -59,14 +61,14 @@
     position: absolute;
     transform: skewY(6deg);
     margin-left: 45%;
-    margin-top: 25%;
+    margin-top: 32%;
     color: white;
 
 }
 
 #part1Text2 {
     position: absolute;
-    margin-top: 32%;
+    margin-top: 39%;
     margin-left: 20%;
     ;
 
@@ -82,7 +84,7 @@
     position: relative;
     top: 100%;
     background-color: #E4DAD1;
-    width: 99%;
+
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
@@ -129,7 +131,7 @@
     ;
     top: 100%;
     background-color: #1F1527;
-    width: 99%;
+
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
@@ -183,7 +185,7 @@
     position: relative;
     top: 100%;
     background-color: #e5b4b0;
-    width: 99%;
+
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
@@ -228,7 +230,7 @@
     position: relative;
     top: 100%;
     background-color: #f0a0b4;
-    width: 99%;
+
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
@@ -271,7 +273,7 @@
     position: relative;
     top: 100%;
     background-color: #b7c0c6;
-    width: 99%;
+
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
@@ -311,7 +313,7 @@
     position: relative;
     top: 100%;
     background-color: #422c53;
-    width: 99%;
+
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
@@ -356,7 +358,7 @@
     position: relative;
     top: 100%;
     background-color: #f9d3d8;
-    width: 99%;
+
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
@@ -394,7 +396,7 @@
     position: relative;
     top: 100%;
     background-color: #ffe4cd;
-    width: 99%;
+
     height: 750px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
@@ -432,21 +434,75 @@
     position: relative;
     top: 100%;
     background-color: #dadcdd;
-    width: 99%;
-    height: 750px;
+    z-index: 10;
+    height: 350px;
     transform: skewY(-6deg);
     transform-origin: bottom left;
-
 }
 
 #part10 p {
+    width: 50% !important;
     position: absolute;
     top: 10%;
-    margin-left: 25%;
+    margin-left: 5%;
     font-family: 'Monoton', cursive;
-    font-size: 25px;
+    font-size: 20px;
     color: #1F1527;
     letter-spacing: 3px;
-    display: block;
 
+
+}
+
+footer {
+    color: gray;
+    font-size: 20px;
+    padding: 15px
+}
+
+.right {
+    margin-left: 38%;
+}
+
+.headerImage {
+    position: absolute;
+
+    margin-left: 40%;
+    z-index: 10;
+
+}
+
+.headerImage img {
+    width: 250px
+}
+
+#part11 {
+    position: relative;
+    margin-top: -150px;
+    top: 100%;
+    background-color: #dadcdd;
+    height: 150px;
+    clip-path: polygon(0 80px, 100% 0%, 100% 100%, 0 100%);
+    padding: 10px;
+}
+
+#part11 p {
+    margin-top: 80%;
+    font-size: 20px;
+
+}
+
+#address {
+
+    text-align: left !important;
+    margin-top: 10%;
+    margin-left: 60% !important;
+    font-size: 9px !important;
+    color: black !important;
+
+}
+
+#address img {
+    top: 0;
+    width: 150px;
+    margin-left: 20%
 }
