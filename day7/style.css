@@ -1,0 +1,90 @@
+body {
+    text-align: justify !important;
+}
+
+.header {
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    padding: 5px;
+    padding-bottom: 0;
+    margin: 5px;
+    margin-bottom: 0;
+}
+
+.newspaperInfo {
+
+    margin-top: 35px;
+}
+
+.newspaperInfo hr {
+    width: 100%;
+    color: black !important;
+
+}
+
+.website {
+    margin-right: 150px;
+}
+
+
+
+.hr {
+    border-top: 1px solid black;
+}
+
+.side-header-left {
+    margin-top: 20px;
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+}
+
+.side-header-right {
+    margin-top: 20px;
+    background-color: rgb(220, 220, 220);
+    padding: 20px
+}
+
+.center-header {
+    padding: 5px;
+    margin-left: 60px
+}
+
+.borderHeader {
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 2px;
+}
+
+.page2Header {
+
+    font-size: 6.7em;
+    letter-spacing: 0.099em;
+}
+
+.redHeader {
+
+
+    font-size: 20px;
+    color: white;
+}
+
+.firstPartPage2 {
+    height: 85%;
+}
+
+.headerImage {
+    width: 100%;
+    height: 420px
+}
+
+.paragraphSecond {
+    font-size: 20px;
+    color: maroon;
+    text-align: center;
+}
+
+.paraPage3 {
+    text-align: center !important;
+    color: darkred;
+}
