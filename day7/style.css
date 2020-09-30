@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-    font-size: 52px;
+    font-size: 65px;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 4px;
     padding: 5px;
@@ -87,7 +87,7 @@ body {
 }
 
 .website {
-    margin-left: 11em;
+    margin-left: 0em;
 }
 
 .paraPage3 {
@@ -101,7 +101,10 @@ body {
 }
 
 .belowHeaderLine {
-    margin-left: 20px
+    font-size: 10px;
+    letter-spacing: 3px;
+    padding-left: 3em;
+    margin-left: 7.5em;
 }
 
 .rightHeader {
@@ -129,14 +132,42 @@ body {
         margin-left: 0px;
     }
 
-    .belowHeaderLine {
-        margin-left: 3.2em;
-    }
+
 
     .rightHeader {
 
         margin-left: 0em;
 
     }
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+        font-size: 55px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-left: -1em;
+    }
+
+    .belowHeaderLine {
+
+        margin-left: 0em;
+    }
+
+
+
+}
+
+@media (max-width: 1024px) {
+    .header {
+        font-size: 55px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-left: -1em;
+    }
+
+
 
 }
