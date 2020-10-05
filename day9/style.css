@@ -2,9 +2,9 @@ body {
 	background-color: #b3cdd1;
 }
 #calculator {
-	border: 2px solid gray;
+	border: 1px solid gray;
 	width: 200px;
-	box-shadow: 2px 2px 10px 9px white;
+	box-shadow: 2px 2px 10px 9px gray;
 	border-radius: 4px;
 	width: auto;
 	margin-top: 10%;
@@ -28,11 +28,12 @@ body {
 }
 
 .number {
-	border: 1px solid gray;
+	border: 1px solid rgb(123, 126, 95);
 }
 
 .operator {
 	border: 1px solid gray;
+	color: rgb(182, 147, 147);
 }
 .clear {
 	border: 1px solid gray;

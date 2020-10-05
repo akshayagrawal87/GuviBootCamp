@@ -1,28 +1,73 @@
 var result = 0;
 var display = document.querySelector(".calc-display");
 var def = true;
-var lastOperation;
+var lastOperation = undefined;
 
 try {
 	function displayed(event) {
 		display.innerText = result;
 	}
+
+	document.addEventListener("keyup", function (event) {
+		event.preventDefault();
+		console.log(event.keyCode);
+		let x = +String.fromCharCode(event.keyCode);
+		if (
+			x === 1 ||
+			x === 2 ||
+			x === 3 ||
+			x === 4 ||
+			x === 5 ||
+			x === 6 ||
+			x === 7 ||
+			x === 8 ||
+			x === 9 ||
+			x === 0
+		) {
+			if (lastOperation === undefined) {
+				if (def === true) {
+					result = "";
+					display.innerText = "";
+					def = false;
+				}
+				//A nine digit calculator
+				if (display.innerText.split("").length < 9) {
+					result += String.fromCharCode(event.keyCode);
+					display.innerText = result;
+				}
+			} else {
+				if (def === true) temp = result;
+				console.log("last result" + temp);
+				if (def === true) {
+					result = "";
+					display.innerText = "";
+					def = false;
+				}
+				//A nine digit calculator
+				if (display.innerText.split("").length < 9) {
+					result += String.fromCharCode(event.keyCode);
+					display.innerText = result;
+				}
+			}
+		}
+	});
+
 	//Functions to add,sub,mul,div,mod
 
 	let operation = {};
-	operation.add = function addition(a, b) {
+	operation["add"] = function addition(a, b) {
 		return a + b;
 	};
-	operation.sub = function subtraction(a, b) {
+	operation["sub"] = function subtraction(a, b) {
 		return a - b;
 	};
-	operation.mul = function muliplication(a, b) {
+	operation["mul"] = function muliplication(a, b) {
 		return a * b;
 	};
-	operation.div = function division(a, b) {
+	operation["div"] = function division(a, b) {
 		return a / b;
 	};
-	operation.mod = function modulus(a, b) {
+	operation["mod"] = function modulus(a, b) {
 		return a % b;
 	};
 
@@ -43,8 +88,11 @@ try {
 
 	var numbers = document.querySelectorAll(".number");
 
+	var temp;
+
 	for (let i = 0; i < numbers.length; i++) {
 		// console.log(numbers[i].addEventListener("click", putValue(numbers[i].value)));
+
 		numbers[i].addEventListener("click", (event) => {
 			event.preventDefault();
 			if (lastOperation === undefined) {
@@ -59,12 +107,32 @@ try {
 					display.innerText = result;
 				}
 			} else {
-				result = operation[lastOperation](+result, +numbers[i].value);
-				display.innerText = result;
-				lastOperation = undefined;
+				if (def === true) temp = result;
+				console.log("last result" + temp);
+				if (def === true) {
+					result = "";
+					display.innerText = "";
+					def = false;
+				}
+				//A nine digit calculator
+				if (display.innerText.split("").length < 9) {
+					result += numbers[i].value;
+					display.innerText = result;
+				}
 			}
 		});
 	}
+
+	var $equal = document.querySelector(".result");
+	$equal.addEventListener("click", (event) => {
+		event.preventDefault();
+		if (lastOperation !== undefined) {
+			console.log(operation[lastOperation](+result, +temp));
+			display.innerText = operation[lastOperation](+temp, +result);
+			result = display.innerText;
+			lastOperation = undefined;
+		}
+	});
 
 	var operators = document.querySelectorAll(".operator");
 
@@ -72,6 +140,7 @@ try {
 		operators[i].addEventListener("click", (event) => {
 			event.preventDefault();
 			lastOperation = operators[i].value;
+			def = true;
 			console.log(lastOperation);
 		});
 	}
