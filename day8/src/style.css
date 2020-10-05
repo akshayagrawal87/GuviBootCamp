@@ -233,7 +233,7 @@ h2 {
 		display: inline;
 		margin-left: 36%;
 		font-size: 35px;
-		position: fixed;
+		position: absolute;
 		padding: 5px;
 		border-radius: 20%;
 		border: 3px groove #b0a8b9;
