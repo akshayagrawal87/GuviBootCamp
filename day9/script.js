@@ -1,3 +1,4 @@
+//Anonymous function to define html elements
 (() => {
 	let main = document.createElement("main");
 	document.body.appendChild(main);
@@ -182,4 +183,154 @@
 	let col3 = document.createElement("div");
 	col3.classList.add("col-lg");
 	row.appendChild(col3);
+})();
+
+//Anonymous function to add logic to all button(NUMBER,OPERATORS,CLEAR,RESULT);
+(() => {
+	try {
+		//Setting the result varibale to zero
+		var result = 0;
+		var display = document.querySelector(".calc-display");
+		//default varible
+		var def = true;
+		var lastOperation = undefined;
+		//Temp varibale
+		var temp;
+
+		//function to chnage calulator display value
+		function displayed(event) {
+			display.innerText = result;
+		}
+		//Event listener for keyboad actions
+		document.addEventListener("keyup", function (event) {
+			event.preventDefault();
+
+			//console.log(event.keyCode);
+
+			let x = +String.fromCharCode(event.keyCode);
+
+			if (x >= 0 && x <= 9) {
+				if (lastOperation === undefined) {
+					if (def === true) {
+						result = "";
+						display.innerText = "";
+						def = false;
+					}
+					//A nine digit calculator
+					if (display.innerText.split("").length < 9) {
+						result += String.fromCharCode(event.keyCode);
+						display.innerText = result;
+					}
+				} else {
+					if (def === true) temp = result;
+					//console.log("last result" + temp);
+					if (def === true) {
+						result = "";
+						display.innerText = "";
+						def = false;
+					}
+					//A nine digit calculator
+					if (display.innerText.split("").length < 9) {
+						result += String.fromCharCode(event.keyCode);
+						display.innerText = result;
+					}
+				}
+			}
+		});
+
+		//Functions to add,sub,mul,div,mod to object operation
+
+		let operation = {};
+		operation["add"] = function addition(a, b) {
+			return a + b;
+		};
+		operation["sub"] = function subtraction(a, b) {
+			return a - b;
+		};
+		operation["mul"] = function muliplication(a, b) {
+			return a * b;
+		};
+		operation["div"] = function division(a, b) {
+			return a / b;
+		};
+		operation["mod"] = function modulus(a, b) {
+			return a % b;
+		};
+
+		//Function to clear the display and memory
+		var clear = function (event) {
+			event.preventDefault();
+			display = document.querySelector(".calc-display");
+			display.innerText = "0";
+			result = 0;
+			def = true;
+		};
+
+		var $clear = document.querySelector(".clear");
+
+		//adding event listenen to clear button
+		$clear.addEventListener("click", clear);
+
+		var numbers = document.querySelectorAll(".number");
+
+		//loop to add event listenet to class numbers
+		for (let i = 0; i < numbers.length; i++) {
+			// console.log(numbers[i].addEventListener("click", putValue(numbers[i].value)));
+
+			numbers[i].addEventListener("click", (event) => {
+				event.preventDefault();
+				if (lastOperation === undefined) {
+					if (def === true) {
+						result = "";
+						display.innerText = "";
+						def = false;
+					}
+					//A nine digit calculator
+					if (display.innerText.split("").length < 9) {
+						result += numbers[i].value;
+						display.innerText = result;
+					}
+				} else {
+					if (def === true) temp = result;
+					//console.log("last result" + temp);
+					if (def === true) {
+						result = "";
+						display.innerText = "";
+						def = false;
+					}
+					//A nine digit calculator
+					if (display.innerText.split("").length < 9) {
+						result += numbers[i].value;
+						display.innerText = result;
+					}
+				}
+			});
+		}
+
+		//Adding eveny listenet to result button
+		var $equal = document.querySelector(".result");
+		$equal.addEventListener("click", (event) => {
+			event.preventDefault();
+			if (lastOperation !== undefined) {
+				//console.log(operation[lastOperation](+result, +temp));
+				display.innerText = operation[lastOperation](+temp, +result);
+				result = display.innerText;
+				lastOperation = undefined;
+			}
+		});
+
+		//Adding event listener to all operators
+		var operators = document.querySelectorAll(".operator");
+
+		for (let i = 0; i < operators.length; i++) {
+			operators[i].addEventListener("click", (event) => {
+				event.preventDefault();
+				lastOperation = operators[i].value;
+				def = true;
+				//console.log(lastOperation);
+			});
+		}
+	} catch (err) {
+		display.innerText = err;
+	}
 })();
