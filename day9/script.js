@@ -169,7 +169,7 @@
 	let row5Button0 = document.createElement("button");
 	row5Button0.classList.add("col-6", "number", "btn", "btn-dark");
 	row5Button0.setAttribute("type", "button");
-	row5Button0.setAttribute("value", "add");
+	row5Button0.setAttribute("value", "0");
 	row5Button0.innerText = "0";
 	rowKeyBoardColRow5.appendChild(row5Button0);
 
