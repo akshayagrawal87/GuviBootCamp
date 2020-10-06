@@ -12,18 +12,7 @@ try {
 		event.preventDefault();
 		console.log(event.keyCode);
 		let x = +String.fromCharCode(event.keyCode);
-		if (
-			x === 1 ||
-			x === 2 ||
-			x === 3 ||
-			x === 4 ||
-			x === 5 ||
-			x === 6 ||
-			x === 7 ||
-			x === 8 ||
-			x === 9 ||
-			x === 0
-		) {
+		if (x >= 0 && x <= 9) {
 			if (lastOperation === undefined) {
 				if (def === true) {
 					result = "";
