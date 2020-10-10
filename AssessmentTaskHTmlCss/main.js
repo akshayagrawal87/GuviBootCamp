@@ -13,6 +13,7 @@ var $headerIcon = document.querySelector(".icon");
 $headerIcon.addEventListener("click", navBarResponsive);
 
 var formSubmit = document.querySelector(".signUpForm");
+
 formSubmit.addEventListener("submit", function (event) {
 	alert("Thanks for signing up ");
 });
