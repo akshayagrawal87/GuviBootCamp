@@ -1,3 +1,4 @@
+//function to make nav bar responsive
 function navBarResponsive(event) {
 	event.preventDefault();
 	var x = document.querySelector("#myTopnav");
