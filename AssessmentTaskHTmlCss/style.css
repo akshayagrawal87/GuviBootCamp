@@ -144,11 +144,12 @@ footer {
 	display: flex;
 }
 .addToCart {
-	background-color: rgb(33, 107, 61);
+	background-color: rgba(25, 156, 75, 0.904);
 	width: 90px;
 	height: 30px;
 	margin-left: 250px;
 	text-align: center;
+	border-radius: 5px;
 }
 
 /* Create three equal columns that sits next to each other */
