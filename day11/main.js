@@ -15,7 +15,7 @@ function getAllCountries(name) {
 //Function to get Weather of specified city
 function getWeatherByLocation(cityname) {
 	fetch(
-		"http://api.openweathermap.org/data/2.5/weather?q=" +
+		"https://api.openweathermap.org/data/2.5/weather?q=" +
 			cityname +
 			"&appid=" +
 			API_KEY
@@ -121,7 +121,7 @@ function getWeatherByLocation(cityname) {
 			weatherButton.addEventListener("click", function (event) {
 				//console.log("hi");
 				fetch(
-					"http://api.openweathermap.org/data/2.5/weather?q=" +
+					"https://api.openweathermap.org/data/2.5/weather?q=" +
 						data[0].capital +
 						"&appid=" +
 						API_KEY
@@ -211,7 +211,7 @@ function getWeatherByLocation(cityname) {
 
 			weatherButton.addEventListener("click", function (event) {
 				fetch(
-					"http://api.openweathermap.org/data/2.5/weather?q=" +
+					"https://api.openweathermap.org/data/2.5/weather?q=" +
 						data[0].capital +
 						"&appid=" +
 						API_KEY
@@ -301,7 +301,7 @@ function getWeatherByLocation(cityname) {
 
 			weatherButton.addEventListener("click", function (event) {
 				fetch(
-					"http://api.openweathermap.org/data/2.5/weather?q=" +
+					"https://api.openweathermap.org/data/2.5/weather?q=" +
 						data[0].capital +
 						"&appid=" +
 						API_KEY
