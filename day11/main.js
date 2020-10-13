@@ -1,33 +1,6 @@
 //Api key for weather Api
 const API_KEY = "a3aef5040eb809f3fdd82cef7a238b8e";
 
-//Function to get details of specified Country
-function getAllCountries(name) {
-	return fetch("https://restcountries.eu/rest/v2/name/" + name)
-		.then((Response) => {
-			return Response.json();
-		})
-		.then((data) => {
-			console.log(data);
-		});
-}
-
-//Function to get Weather of specified city
-function getWeatherByLocation(cityname) {
-	fetch(
-		"https://api.openweathermap.org/data/2.5/weather?q=" +
-			cityname +
-			"&appid=" +
-			API_KEY
-	)
-		.then((Response) => {
-			return Response.text();
-		})
-		.then((data) => {
-			console.log("Weather Data of " + cityname + ": " + data);
-		});
-}
-
 //IIFE TO GENERATE BASIC STUCTURE OF HTML
 (() => {
 	//Adding main section
@@ -146,8 +119,14 @@ function getWeatherByLocation(cityname) {
 								"Wind Speed:" +
 								value.wind.speed
 						);
+					})
+					.catch((err) => {
+						console.error("Error in open weather api in afg block: " + err);
 					});
 			});
+		})
+		.catch((err) => {
+			console.error("Error in open weather api in afg block: " + err);
 		});
 })();
 //IIFE TO GENERATE CARD FOR NEPAL
@@ -236,8 +215,14 @@ function getWeatherByLocation(cityname) {
 								"Wind Speed:" +
 								value.wind.speed
 						);
+					})
+					.catch((err) => {
+						console.error("Error in open weather api  in nepal block: " + err);
 					});
 			});
+		})
+		.catch((err) => {
+			console.error("Error in country api  in nepal block: " + err);
 		});
 })();
 
@@ -326,7 +311,15 @@ function getWeatherByLocation(cityname) {
 								"Wind Speed:" +
 								value.wind.speed
 						);
+					})
+					.catch((err) => {
+						console.error(
+							"Error in open weather api  in srilanka block: " + err
+						);
 					});
 			});
+		})
+		.catch((err) => {
+			console.error("Error in country api  in srilanka block: " + err);
 		});
 })();
