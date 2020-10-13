@@ -226,6 +226,7 @@ const API_KEY = "a3aef5040eb809f3fdd82cef7a238b8e";
 		});
 })();
 
+//IIFE TO GENERATE CARD FOR Srilanka
 (() => {
 	let srilanka = document.querySelector(".srilanka");
 
