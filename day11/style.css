@@ -1,18 +1,13 @@
 main {
 	background-color: beige;
 	width: 100%;
-	height: auto;
-}
-
-.col-lg {
-	padding: 15px;
 }
 
 .card {
 	background-image: linear-gradient(
 		to right,
 		rgba(255, 0, 0, 0),
-		rgba(255, 0, 0, 1)
+		rgba(77, 114, 170, 0.863)
 	) !important;
 
 	border: 2px solid maroon !important;
@@ -25,5 +20,20 @@ main {
 	letter-spacing: 5px;
 }
 .card img {
-	padding: 4px;
+	min-height: 250px !important;
+	max-height: 250px !important;
+}
+.card-header {
+	white-space: nowrap;
+	overflow: scroll;
+}
+
+.country {
+	padding: 8px !important;
+}
+h1 {
+	padding: 10px;
+	color: gray;
+	border: 3px dotted maroon;
+	font-size: 70px !important;
 }
