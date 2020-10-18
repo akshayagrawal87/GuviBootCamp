@@ -70,6 +70,8 @@ function AddCountry(country) {
 
 		let weatherButton = document.createElement("button");
 		weatherButton.classList.add("btn", "btn-primary");
+		weatherButton.setAttribute("data-toggle", "modal");
+		weatherButton.setAttribute("data-target", "#weatherModal");
 		weatherButton.innerText = "Click for Weather";
 
 		//Addding on click to get weather using fetch
