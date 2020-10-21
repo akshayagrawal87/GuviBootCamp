@@ -435,13 +435,19 @@ try {
 			try {
 				let arr = localStorage.getItem("highScores");
 				let scores = JSON.parse(arr);
+				console.log(scores);
+				scores.sort((a, b) => {
+					return b.score - a.score;
+				});
+
+				console.log(scores);
 
 				console.log(scores.length);
 				if (scores.length > 0) {
 					let scoreTable = document.createElement("div");
 					for (let i = 0; i < scores.length; i++) {
 						scoreTable.classList.add("scoreTable");
-						console.log(scores[i].name + "----" + scores[i].score);
+
 						scoreTable.innerHTML =
 							scoreTable.innerHTML +
 							scores[i].name +
