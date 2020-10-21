@@ -54,8 +54,10 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 })();
 
 //IIFE FOR GAME.HTML
-(() => {
+(async () => {
 	try {
+		await getTriviaData();
+
 		let game = document.querySelector(".game");
 		game.classList.add("container");
 
@@ -159,19 +161,21 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 		option4.appendChild(option4Content);
 		options.appendChild(option4);
 
-		Trivia();
+		await Trivia();
 	} catch (e) {
 		console.warn(e.message);
 	}
 })();
-//Trivia
-async function Trivia() {
+
+async function getTriviaData() {
 	let response = await fetch(
 		"https://opentdb.com/api.php?amount=10&type=multiple"
 	);
 
 	this.data = await response.json();
-
+}
+//Trivia
+async function Trivia() {
 	let score = 0;
 
 	nextQuestion(countOfQuestion);
@@ -216,7 +220,7 @@ async function checkAnswer(answer, key) {
 
 		setTimeout(() => {
 			nextQuestion(countOfQuestion);
-		}, 2000);
+		}, 1300);
 	}
 	if (countOfQuestion === 10) {
 		localStorage.lastScore = scoreValue;
@@ -240,7 +244,7 @@ function changeColor(key, correct) {
 				for (let i = 0; i < 4; i++) {
 					optionButton[i].removeAttribute("id");
 				}
-			}, 1900);
+			}, 1100);
 		} else {
 			let optionButton = document.querySelectorAll(".option");
 			optionButton[key].setAttribute("id", "incorrect");
@@ -255,7 +259,7 @@ function changeColor(key, correct) {
 				for (let i = 0; i < 4; i++) {
 					optionButton[i].removeAttribute("id");
 				}
-			}, 1900);
+			}, 1100);
 		}
 	});
 }
