@@ -7,6 +7,8 @@ try {
 	let answers = [];
 	const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 	let correctAnswer;
+
+	//IIFE FOR INDEX.HTML
 	(() => {
 		try {
 			let index = document.querySelector(".index");
@@ -381,10 +383,16 @@ try {
 			let saveHighScore = document.createElement("button");
 			saveHighScore.classList.add("btn", "btn-light", "HighScoreplayButton");
 			saveHighScore.innerText = "Save My Score";
+
 			col2.appendChild(saveHighScore);
+			saveHighScore.setAttribute("disabled", true);
 			saveHighScore.addEventListener("click", function (event) {
 				event.preventDefault();
-				saveHigh();
+				if (input.value.length > 0) {
+					saveHigh();
+				} else {
+					alert("enter the username");
+				}
 			});
 
 			let play = document.createElement("a");
@@ -401,6 +409,15 @@ try {
 			gohome.setAttribute("href", "end.html");
 			gohome.innerText = "HighScores";
 			col2.appendChild(gohome);
+
+			input.addEventListener("keyup", (e) => {
+				e.preventDefault();
+				if (input.value === "") {
+					saveHighScore.setAttribute("disabled", true);
+				} else {
+					saveHighScore.removeAttribute("disabled");
+				}
+			});
 		} catch (e) {
 			console.warn(e.message);
 		}

@@ -1,0 +1,39 @@
+#petShopHeader {
+	width: 100%;
+	text-align: center;
+	font-size: 75px;
+	letter-spacing: 18px;
+	background-color: #343a40;
+	color: snow;
+	border: 3px dotted white !important;
+}
+
+#petShopHeader:hover {
+	color: orange;
+	border: 5px dotted orange !important;
+}
+
+#petTableHeader {
+	width: 100%;
+
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 8px;
+}
+.addNewPet {
+	text-align: center;
+	padding: 5px;
+	font-size: 19px;
+}
+
+.getPetDetails {
+}
+.btn {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	width: 100%;
+}
+.responseData {
+	text-align: center;
+	font-size: 28px;
+}
