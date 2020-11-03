@@ -106,11 +106,28 @@ async function fetchYoutubeData() {
 				"list-group-item-action",
 				`listElement${i}`
 			);
-			a.setAttribute("data-value", videoId[i]);
+			a.addEventListener("click", (e) => {
+				playSelectedSong(songList[i]);
+			});
 			a.innerHTML = songList[i];
 			playlist.appendChild(a);
 		}
 	};
+
+	function playSelectedSong(song) {
+		let num = songList.indexOf(song);
+		console.log(num);
+
+		let lastEle = document.querySelector(`.listElement${currentSongNumber}`);
+		lastEle.classList.remove("active", "list-group-item-dark");
+		currentSongNumber = num;
+
+		player.loadVideoById(videoId[num]);
+
+		let listEle = document.querySelector(`.listElement${currentSongNumber}`);
+		listEle.classList.add("active", "list-group-item-dark");
+	}
+
 	loadPlayList();
 
 	let listEle = document.querySelector(`.listElement${currentSongNumber}`);
