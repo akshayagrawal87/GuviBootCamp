@@ -1,0 +1,14 @@
+import api from "../API";
+import { YoutubeChannel, YoutubeChannelParams, YoutubeChannelSearch, YoutubeCommentParams, YoutubeCommentThreadSearch, YoutubeSearchParams, YoutubeSubscriptionParams, YoutubeSubscriptionSearch } from "../types/index";
+export declare class Channels {
+    private readonly api;
+    private readonly util;
+    constructor(api: api);
+    get: (channelResolvable: string, params?: YoutubeChannelParams) => Promise<YoutubeChannel>;
+    search: (params?: YoutubeSearchParams) => Promise<YoutubeChannelSearch>;
+    allComments: (channelResolvable: string, params?: YoutubeCommentParams) => Promise<YoutubeCommentThreadSearch>;
+    comments: (channelResolvable: string, params?: YoutubeCommentParams) => Promise<YoutubeCommentThreadSearch>;
+    subscriptions: (channelResolvable: string, params?: YoutubeSubscriptionParams) => Promise<YoutubeSubscriptionSearch>;
+    sections: (channelResolvable: string, params?: any) => Promise<any>;
+    section: (sectionID: string, params?: any) => Promise<any>;
+}

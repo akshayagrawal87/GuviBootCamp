@@ -1,0 +1,27 @@
+{
+  "name": "day15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev-build": "webpack --watch",
+    "serve": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ng2-youtube-player": "0.0.31",
+    "ts-loader": "^8.0.7",
+    "typescript": "^4.0.5",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@angular/youtube-player": "^10.2.6",
+    "@types/youtube": "0.0.39",
+    "youtube.ts": "^0.1.8"
+  }
+}

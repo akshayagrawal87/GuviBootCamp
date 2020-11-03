@@ -1,0 +1,12 @@
+import api from "../API";
+import { YoutubePlaylist, YoutubePlaylistItem, YoutubePlaylistItemsSearch, YoutubePlaylistParams, YoutubePlaylistSearch, YoutubeSearchParams } from "../types/index";
+export declare class Playlists {
+    private readonly api;
+    private readonly util;
+    constructor(api: api);
+    get: (playlistResolvable: string, params?: YoutubePlaylistParams) => Promise<YoutubePlaylist>;
+    items: (playlistResolvable: string, params?: YoutubePlaylistParams) => Promise<YoutubePlaylistItemsSearch>;
+    item: (playlistResolvable: string, videoResolvable: string, params?: YoutubePlaylistParams) => Promise<YoutubePlaylistItem>;
+    itemByID: (playlistItemID: string, params?: YoutubePlaylistParams) => Promise<YoutubePlaylistItem>;
+    search: (params?: YoutubeSearchParams) => Promise<YoutubePlaylistSearch>;
+}

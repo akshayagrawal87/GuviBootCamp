@@ -1,0 +1,10 @@
+import api from "../API";
+import { YoutubeCommentThreadSearch, YoutubeSearchParams, YoutubeVideo, YoutubeVideoParams, YoutubeVideoSearch } from "../types/index";
+export declare class Videos {
+    private readonly api;
+    private readonly util;
+    constructor(api: api);
+    get: (videoResolvable: string, params?: YoutubeVideoParams) => Promise<YoutubeVideo>;
+    search: (params?: YoutubeSearchParams) => Promise<YoutubeVideoSearch>;
+    comments: (videoResolvable: string, params?: any) => Promise<YoutubeCommentThreadSearch>;
+}

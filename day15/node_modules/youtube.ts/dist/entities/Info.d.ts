@@ -1,0 +1,9 @@
+import api from "../API";
+export declare class Info {
+    private readonly api;
+    constructor(api: api);
+    guideCategories: (params?: any) => Promise<any>;
+    videoCategories: (params?: any) => Promise<any>;
+    guideCategory: (categoryID: string, params?: any) => Promise<any>;
+    videoCategory: (categoryID: string, params?: any) => Promise<any>;
+}

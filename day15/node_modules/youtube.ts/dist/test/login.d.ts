@@ -1,0 +1,3 @@
+import Youtube from "../youtube";
+declare const youtube: Youtube;
+export { youtube };

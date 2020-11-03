@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/b2b1f81e86.js"
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="stylesheet" href="style.css" />
+		<title>MY T.V.</title>
+	</head>
+	<body>
+		<!-- <a href="#" id="xyLink" onfocus="toggleXY();" accesskey="z"></a> -->
+		<script defer src="./src/dummy.js"></script>
+		<div class="container-fluid tvApp">
+			<div class="row">
+				<div class="col-12">
+					<u>
+						<h1>
+							The Music Player<i class="fas fa-music"></i
+							><i class="fas fa-music"></i></h1
+					></u>
+				</div>
+				<div class="col-lg songList mt-2">
+					<h2>Playlist</h2>
+					<div class="list-group playlist"></div>
+				</div>
+				<div class="col-lg simpleTv mt-5">
+					<div id="player"></div>
+
+					<!-- <div id="play-btn" class="video-controls">PLAY</div> -->
+					<!-- <div id="pause-btn" class="video-controls">PAUSE</div>
+					<div id="mute-btn" class="video-controls">MUTE</div>
+					<div id="unmute-btn" class="video-controls">UNMUTE</div>
+					<div id="stop-btn" class="video-controls">STOP</div>
+					<div id="replay-btn" class="video-controls">REPLAY</div> -->
+				</div>
+				<div class="col-lg simpleRemote">
+					<img src="./resource/remote (1).png" usemap="#image-map" />
+					<map name="image-map">
+						<area
+							alt="play"
+							title="play"
+							coords="75,302,26"
+							shape="circle"
+							id="play"
+							href=""
+							class="video-controls"
+						/>
+						<area
+							alt="previous"
+							title="previous"
+							coords="31,304,16"
+							shape="circle"
+							href=""
+							id="prev"
+						/>
+
+						<area
+							alt="next"
+							href=""
+							title="next"
+							coords="120,304,19"
+							shape="circle"
+							id="next"
+						/>
+						<area
+							alt="playList"
+							title="playList"
+							coords="118,242,18"
+							shape="circle"
+							id="playlist"
+						/>
+
+						<area
+							alt="home"
+							title="home"
+							coords="76,241,18"
+							shape="circle"
+							id="home"
+						/>
+						<area
+							alt="replay"
+							title="replay"
+							coords="31,241,17"
+							shape="circle"
+							id="replay"
+						/>
+						<area
+							alt="volUp"
+							title="volUp"
+							coords="76,103,29"
+							shape="circle"
+							id="volUp"
+						/>
+						<area
+							alt="volDown"
+							title="volDown"
+							coords="74,193,29"
+							shape="circle"
+							id="volDown"
+						/>
+
+						<area
+							alt="mute"
+							title=""
+							coords="57,40,95,75"
+							shape="rect"
+							id="mute-btn"
+							class="video-controls"
+						/>
+					</map>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</body>
+</html>

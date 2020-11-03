@@ -1,0 +1,6 @@
+export default class API {
+    private readonly apiKey;
+    constructor(apiKey: string);
+    get: (type: string, params?: any) => Promise<any>;
+    part: (endpoint: string, part: string, params?: any) => Promise<any>;
+}

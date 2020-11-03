@@ -1,0 +1,28 @@
+.tvApp {
+	background-color: #051937;
+	color: white;
+	padding: 40px;
+}
+h1 {
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 4px;
+}
+h1:hover {
+	color: blueviolet;
+	font-size: 50px;
+	margin-bottom: 2px;
+}
+.fas:hover {
+	color: orange !important;
+}
+.simpleRemote {
+	text-align: center;
+}
+
+.list-group {
+	height: 500px !important;
+	margin-bottom: 10px;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}

@@ -1,0 +1,8 @@
+import api from "../API";
+import { YoutubeComment, YoutubeCommentParams, YoutubeCommentThread } from "../types/index";
+export declare class Comments {
+    private readonly api;
+    constructor(api: api);
+    get: (commentId: string, params?: YoutubeCommentParams) => Promise<YoutubeComment>;
+    thread: (commentThreadId: string, params?: YoutubeCommentParams) => Promise<YoutubeCommentThread>;
+}

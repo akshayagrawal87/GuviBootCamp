@@ -1,0 +1,7 @@
+import api from "../API";
+import { YoutubeSubscription, YoutubeSubscriptionParams } from "../types/index";
+export declare class Subscriptions {
+    private readonly api;
+    constructor(api: api);
+    get: (subscriptionId: string, params?: YoutubeSubscriptionParams) => Promise<YoutubeSubscription>;
+}
