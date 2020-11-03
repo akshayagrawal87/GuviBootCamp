@@ -1,8 +1,8 @@
-videoId = [];
+let videoId = [];
 
-songList = [];
+let songList = [];
 
-currentSongNumber = 0;
+let currentSongNumber = 0;
 
 async function fetchYoutubeData() {
 	let API_KEY = "AIzaSyDUmUBBEeI994iJ2o_eFF1dEk6GmWVbctY";
